@@ -106,11 +106,10 @@ jobs:
 
       - name: 合成文件
         run: |
+          ls
+          python to_pdf.py
+          ls
           cd $JM_DOWNLOAD_DIR
-          ls
-          python ./usage/to_pdf.py
-          ls
-          mv "../$M_ALBUM_ID" .
           ls
 
       - name: 上传结果
