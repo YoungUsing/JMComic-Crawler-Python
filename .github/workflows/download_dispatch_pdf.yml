@@ -118,6 +118,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ${{ env.JM_ALBUM_IDS }}
-          path: ${{env.JM_DOWNLOAD_DIR}}/${{env.JM_ALBUM_IDS}}.pdf
+          path: ${{env.JM_DOWNLOAD_DIR}}${{env.JM_ALBUM_IDS}}.pdf
           if-no-files-found: error
           retention-days: 1
