@@ -107,6 +107,8 @@ jobs:
       - name: 合成文件
         run: |
           ls
+          cd ./usage/
+          ls
           python to_pdf.py
           ls
           cd $JM_DOWNLOAD_DIR
