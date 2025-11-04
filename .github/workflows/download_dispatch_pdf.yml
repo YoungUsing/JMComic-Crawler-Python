@@ -108,7 +108,7 @@ jobs:
         run: |
           cd $JM_DOWNLOAD_DIR
           ls
-          python to_pdf.py
+          python ./usage/to_pdf.py
           ls
           mv "../$M_ALBUM_ID" .
           ls
