@@ -111,6 +111,7 @@ jobs:
           ls
           python to_pdf.py ${{env.JM_DOWNLOAD_DIR}} ${{env.JM_ALBUM_IDS}}
           ls
+          echo ========
           cd $JM_DOWNLOAD_DIR
           ls
 
