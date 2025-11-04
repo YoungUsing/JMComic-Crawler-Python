@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 将JM_DOWNLOAD_DIR目录中各子文件夹（包括嵌套文件夹）的图片按序拼接成PDF文件
-输出文件名为JM_ALBUM_IDS.pdf
+输出文件名为JM_ALBUM_IDS.pdf，并保存在JM_DOWNLOAD_DIR目录中
 """
 
 import os
@@ -134,8 +134,8 @@ def main():
     
     args = parser.parse_args()
     
-    # 构建输出PDF路径
-    output_pdf = f"{args.JM_ALBUM_IDS}.pdf"
+    # 构建输出PDF路径 - 现在保存在JM_DOWNLOAD_DIR目录中
+    output_pdf = os.path.join(args.JM_DOWNLOAD_DIR, f"{args.JM_ALBUM_IDS}.pdf")
     
     print("=" * 50)
     print("图片转PDF工具（支持嵌套文件夹）")
